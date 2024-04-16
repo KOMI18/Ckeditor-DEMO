@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CKEditor </title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #333; /* Couleur de fond sombre */
+            color: #fff; /* Couleur du texte */
+        }
+    </style>
+</head>
+<body>
+    <div class="container bg-dark text-white">
+        <h1 class="my-4">CKEditor </h1>
+        <div class="form-group">
+            <label for="editor">Éditeur de texte</label>
+            <textarea name="editor" id="editor" rows="10" cols="80">
+                Votre texte ici...
+            </textarea>
+        </div>
+    </div>
+
+    <!-- CKEditor -->
+    <script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
+    <script>
+        // Initialiser CKEditor sur l'élément textarea avec l'ID "editor"
+        CKEDITOR.replace('editor');
+    </script>
+
+    <!-- Bootstrap JS et jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
